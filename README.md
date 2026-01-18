@@ -21,23 +21,25 @@ This repo contains the code for **RLShield**. For algorithmic details, please re
 
 ```
 RLShield/
-  Dynamic_Reference_Selection/
-    retrieve.py          # retrieve safe/unsafe references
-    rewrite.py           # rewrite references with vLLM
-
-  Critical_Parameter_Localization/
-    safety_layer/
-      location.py        # locate safety layers
-      utils/             # helper utilities
-    safety_parament_and_score/
-      fixed.py           # fixed reference filter 
-      dynamic.py         # dynamic reference filter 
-      score.py           # compute harmfulness score
-    templates/           # prompt templates
-
-  RL-Driven_Adaptive_Thresholding/
-    train_sac.py         # train SAC threshold policy
-    evaluate_sac.py      # evaluate
+├── Dynamic_Reference_Selection/
+│   ├── retrieve.py          # retrieve safe/unsafe references
+│   └── rewrite.py           # rewrite references with vLLM
+│
+├── Critical_Parameter_Localization/
+│   ├── safety_layer/
+│   │   ├── location.py      # locate safety layers
+│   │   └── utils/           # helper utilities
+│   │
+│   ├── safety_parament_and_score/
+│   │   ├── fixed.py         # fixed reference filter
+│   │   ├── dynamic.py       # dynamic reference filter
+│   │   └── score.py         # compute harmfulness score
+│   │
+│   └── templates/           # prompt templates
+│
+└── RL-Driven_Adaptive_Thresholding/
+    ├── train_sac.py         # train SAC threshold policy
+    └── evaluate_sac.py      # evaluate
 ```
 
 ---
